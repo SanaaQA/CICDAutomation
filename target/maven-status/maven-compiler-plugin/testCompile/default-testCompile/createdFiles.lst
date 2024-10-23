@@ -1,0 +1,6 @@
+ProjectLibrary\DeleteApp.class
+TestComponents\Basetest.class
+TestComponents\Listeners.class
+ProjectLibrary\Studio.class
+ProjectLibrary\DeleteApp$Studio.class
+TestComponents\ExtendReports.class

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="executedBy" value="Sana"/>
+  <parameter name="reportpath" value="/Reports/Studioreport-studioAutomation.xls"/>
+  <listeners>
+    <listener class-name="TestComponents.Listeners"/>
+  </listeners>
+  <test name="Test">
+    <parameter name="executedBy" value="Sana"/>
+    <parameter name="reportpath" value="/Reports/Studioreport-studioAutomation.xls"/>
+    <classes>
+      <class name="ProjectLibrary.Studio"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test(failed)">
+    <parameter name="executedBy" value="Sana"/>
+    <parameter name="reportpath" value="/Reports/Studioreport-studioAutomation.xls"/>
+    <classes>
+      <class name="ProjectLibrary.Studio">
+        <methods>
+          <include name="CreateDBComponents"/>
+          <include name="FileUpload"/>
+          <include name="launchApp"/>
+          <include name="CreateWorkflow"/>
+          <include name="getconfigg"/>
+          <include name="suiteSetUp"/>
+          <include name="suiteTearDown"/>
+        </methods>
+      </class> <!-- ProjectLibrary.Studio -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
